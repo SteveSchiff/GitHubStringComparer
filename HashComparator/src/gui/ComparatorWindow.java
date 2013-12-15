@@ -34,8 +34,8 @@ public class ComparatorWindow {
 	private JFrame frame;
 	private JTextField sourceTextField;
 	private JTextField matchTextField;
-	private String matchText = matchTextField.getText();
-	private String sourceText = sourceTextField.getText();
+	private String matchText;
+	private String sourceText;
 
 	/**
 	 * Launch the application.
@@ -113,6 +113,9 @@ public class ComparatorWindow {
 		compareButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				sourceText = sourceTextField.getText();
+				matchText = matchTextField.getText();
+				
 				if(compareStrings(sourceText, matchText)){
 					JOptionPane.showMessageDialog(null, "They match!");
 				}
@@ -141,7 +144,7 @@ public class ComparatorWindow {
 	public boolean compareStrings(String sourceText, String compareText) {
 		
 		boolean isSame = false;
-		isSame = sourceText.equals(matchTextField);
+		isSame = sourceText.equals(compareText);
 		return isSame;
 	}
 }
