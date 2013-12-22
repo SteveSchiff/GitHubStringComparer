@@ -4,24 +4,13 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-import java.awt.GridBagLayout;
-
 import javax.swing.JButton;
-
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import java.awt.Color;
-
-import javax.swing.JPanel;
-
-import java.awt.FlowLayout;
-
-import javax.swing.JScrollPane;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
